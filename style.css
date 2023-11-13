@@ -1,9 +1,19 @@
+#sepet{
+    position: relative;
+}
+
 #sepet::after{
+    position:absolute;
     content:attr(data-content); 
-    font-size: 8px;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
+    display: block;
+    padding-left: 7px;
+    padding-top: 5px;
+    font-size: 0.8rem;
+    color: #fff;
+    top: -20px;
+    right: -18px;
+    width:22px;
+    height: 22px;
+    background-color: red;
     border-radius: 50%;
 }

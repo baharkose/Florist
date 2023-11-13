@@ -5,7 +5,8 @@
 
 let sepet = document.querySelector("#sepet")
 
-const sepeteEkle = document.querySelectorAll(".fa-cart-shopping")
+const sepeteEkle = document.querySelectorAll(".arttir")
+
 console.log(sepeteEkle);
 
 
@@ -14,8 +15,10 @@ console.log(sepeteEkle);
     sepeteEkle.forEach((buton)=>{
 
         buton.addEventListener("click", () =>{
+            console.log("is clicked");
         sepetA++;
-        sepet.textContent = sepetA;
+        // sepet.textContent = sepetA;
+        console.log(sepetA);
         sepet.setAttribute('data-content', sepetA);
 
     })
